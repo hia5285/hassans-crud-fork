@@ -13,6 +13,8 @@ import java.util.Map;
 public class ItemController {
 
     private final ItemRepository itemRepo;
+@Autowired
+    private ItemService itemService;
 
     public ItemController(ItemRepository itemRepo) {
         this.itemRepo = itemRepo;
@@ -103,4 +105,13 @@ public class ItemController {
         User.Role role = (User.Role) session.getAttribute("role");
         return role == User.Role.OWNER;
     }
+@GetMapping("/service/search")
+public ResponseEntity<?> serviceSearchByName(@RequestParam String name) {
+    return ResponseEntity.ok(itemService.searchByName(name));
+}
+
+@GetMapping("/service/category")
+public ResponseEntity<?> serviceSearchByCategory(@RequestParam String category) {
+    return ResponseEntity.ok(itemService.searchByCategory(category));
+}
 }
