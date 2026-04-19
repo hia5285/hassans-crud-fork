@@ -38,30 +38,6 @@
 - React frontend with table view and form view per entity
 - Unit tests added for service layer (CategoryServiceTest.java)
 
-## Assignment 2 Progress
-
-### Completed User Stories:
-1. US-AUTH-01: Email/Password Login — Ethan Nagooroo
-2. US-AUTH-02: Role-Based Access (Owner vs Helper) — Ahmed Shabana
-3. US-AUTH-03: Owner Secure Login — Abderrahmane Hamidi
-4. US-CAT-01: Browse Catalog by Category — Hassan Al Hasani
-5. US-TECH-01: Add Service Layer & In-Memory Storage — Faisal AlAhmad
-
-### Individual Contributions — Assignment 2:
-| Student | Frontend Task | Backend Task |
-|---|---|---|
-| Ethan Nagooroo | Login UI (React) | Auth endpoints /auth/login, /auth/register |
-| Ahmed Shabana | Route guards & role display | Role-based access control in all controllers |
-| Abderrahmane Hamidi | Unauthorized page UI | Owner-only endpoint protection |
-| Hassan Al Hasani | Menu page, search bar, category dropdown | GET /items, GET /items/search |
-| Faisal AlAhmad | Add to Cart button & cart page | DataInitializer.java, H2 in-memory setup |
-
-### Assignment 2 Changes:
-- Removed MariaDB — no longer requires XAMPP
-- Added H2 in-memory database
-- Added DataInitializer.java seeding 3 users + 10 items
-- Added ItemService.java with ArrayList-based search
-
 ## Assignment 1 Progress
 
 ### Completed:
